@@ -8,46 +8,47 @@
     <title>Sign-Up Form Project</title>
 </head>
 <body>
-    <div class="leftBox">
-        <div class="divH1">
-            <img id="odinLogo" src="logo/odin.png">
-            <h1>Odin</h1>
+    <div class="mainContainer">
+        <div class="leftBox">
+            <div class="divH1">
+                <img id="odinLogo" src="logo/odin.png">
+                <h1>Odin</h1>
+            </div>
         </div>
-    </div>
-    <div class="rightBox">
-        <div class="divH2">
-            <h2>What position absolute does is positions the selected element absolute through the entire area of it's parent element, which is most commonly the root element; in other words the width of the browser screen. So it brings it to the top of the element stack. </h2>
-        </div>
-        <div class="formContainer">
-            <form>
-                <p>Let's do this!</p>
-                <div>
-                    <label for firstName>First Name</label>
-                    <input type="name" id="firstName"> 
-    
-                    <label for lastName>Last Name</label>
-                    <input type="name" id="lastName">
-                </div>
-                <div>
-                    <label for email>Email</label>
-                    <input type="email" id="email"> 
-    
-                    <label for phoneNumber>Phone Number</label>
-                    <input type="number" id="phoneNumber">
-                </div>
-                <div>
-                    <label for passWord>Password</label>
-                    <input type="password" id="password"> 
-        
-                    <label for confirmPassword>Confirm Password</label>
-                    <input type="password" id="confirmPassword">
-                </div>
-                <div class="submit">
-                    <input type="submit" id="submitBtn"></input>
-                </div>
-            </form>
+        <div class="rightBox">
+            <div class="divH2">
+                <h2>What position absolute does is positions the selected element absolute through the entire area of it's parent element, which is most commonly the root element; in other words the width of the browser screen. So it brings it to the top of the element stack. </h2>
+            </div>
+            <div class="formContainer">
+                <p id="textBeforeForm">Let's do this!</p>
+                <form>
+                    <div class="rightForm">
+                        <label for ="firstName">First Name</label>
+                        <input type="name" id="firstName"> 
+                
+                        <label for ="lastName">Last Name</label>
+                        <input type="name" id="lastName">
+                        
+                        <label for ="email">Email</label>
+                        <input type="email" id="email"> 
+                    </div>
             
-            <p>Already have an account? <a href="">Log in</a>
+                    <div class="leftForm">
+                        <label for ="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber">
+        
+                        <label for ="passWord">Password</label>
+                        <input type="password" id="password"> 
+                    
+                        <label for ="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword"> 
+                    </div>
+                </form>
+            </div>
+            <div class="submit">
+                <input type="submit" id="submitBtn">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
