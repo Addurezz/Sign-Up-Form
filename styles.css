@@ -1,16 +1,29 @@
+:root {
+    font-size: 20px;
+}
 
 body {
     display: flex;
     height: 100vh;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+}
+
+.mainContainer {
+    display: flex;
+    width: 80vw;
+    height: 90vh;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .leftBox {
     display: flex; 
     align-items: center;
     justify-content: center;
-    width: 65vw;
     min-width: 400px;
+    width: 80vw;
     background-image: url("img/blackstone3.jpg");
     background-repeat: no-repeat;
 }
@@ -35,4 +48,49 @@ h1 {
 #odinLogo {
     height: 130px;
     padding: 0px;
+}
+
+.divH2 {
+    padding: 50px 70px 30px 70px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    padding: 50px 70px 30px 70px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+}
+
+#textBeforeForm {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    min-width: 90px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+label, input {
+    display: flex;
 }
