@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.leftBox {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+    min-width: 400px;
+    background-image: url("img/blackstone3.jpg");
+    background-repeat: no-repeat;
+}
+
+.divH1 {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 75px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#odinLogo {
+    height: 130px;
+    padding: 0px;
+}
