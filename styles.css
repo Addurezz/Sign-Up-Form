@@ -14,15 +14,16 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-color: rgb(37, 37, 37);
+    background-color: #36454F;
 }
 
 .mainContainer {
     display: flex;
     width: 80%;
     height: 90vh;
-    background-color: hsl(0, 0%, 99%);
+    background-color: hsl(0, 0%, 100%);
     max-width: 1200px;
+    border-radius: 20px;;
 }
 
 .leftBox {
@@ -33,6 +34,7 @@ body {
     width: 100vw;
     background-image: url("img/blackstone3.jpg");
     background-repeat: no-repeat;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .divH1 {
@@ -63,6 +65,7 @@ h1 {
 .rightBox {
     background-color: white;
     width: 200vw;
+    border-radius: 20px;
 }
 
 .divH2 {
@@ -71,6 +74,7 @@ h1 {
     min-height: 200px;
     display: flex;
     align-items: center;
+    border-radius: 0px 20px 0px 0px;
 }
 
 h2 {
@@ -81,7 +85,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 0px 70px 0px 70px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
     border-radius: 10px;
 }
 
@@ -115,8 +119,10 @@ label, input {
 
 input {
     border: 1px solid hsl(0, 0%, 90%);
-    border-radius: 3px;
-    font-size: 1rem;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    padding: 5px 10px 5px 10px;
+    width: 200px;
 }
 
 label {
@@ -144,17 +150,21 @@ label {
     border: none;
 }
 
+#createAccountBtn:hover {
+    transform: scale(1.05);
+}
+
 .createAccount {
     margin-top: 30px;
     margin-left: 70px;
     margin-right: 30px;
+    border-radius: 20px;
 }
 
 a {
     color: rgb(0, 123, 108);
     text-decoration: none;
 }
-
 
 /* focus and required styling */
 
@@ -163,10 +173,32 @@ input:invalid {
 }
 
 input:focus {
-    outline: 1px solid rgb(0, 0, 167);
+    outline: none;
+    transform: scale(1.075);
 }
 
 #passwordError {
     color: rgb(179, 0, 59);
     font-weight: bold;
 }
+
+#github {
+    width: 40px;
+}
+
+#google {
+    width: 67px;
+}
+
+#google:hover {
+    transform: scale(1.2);
+}
+
+#github:hover {
+    transform: scale(1.2);
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+
