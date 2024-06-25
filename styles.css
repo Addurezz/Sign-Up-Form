@@ -34,6 +34,7 @@ body {
     min-width: 300px;
     width: 100vw;
     background-image: url("img/blackstone3.jpg");
+    background-position: -100px;
     background-repeat: no-repeat;
     border-radius: 20px 0px 0px 20px;
 }
@@ -176,6 +177,7 @@ input:invalid {
 input:focus {
     outline: none;
     transform: scale(1.075);
+    background-color: hsl(0, 0%, 98%)
 }
 
 #passwordError {
